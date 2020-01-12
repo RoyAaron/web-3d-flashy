@@ -267,7 +267,7 @@ li{ list-style-type: none }
       let liElemDegX = 2*i;
 
       $('#box li').eq(arr[idx]).css({
-        "transform":`rotateY(${liElemDegY}deg) rotateX(${liElemDegX}deg) translateZ(${liElemDepDefault}px)`,
+        "transform":`rotateY(${liElemDegY}deg) rotateX(${liElemDegX}deg) translateZ(${Math.abs(liElemDepDefault)}px)`,
         "transition": "4s ease-in-out"
       })
 
